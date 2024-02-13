@@ -12,6 +12,8 @@ public class BaristaControls : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+
+        speed *= 1000f;
     }
 
     // Update is called once per frame
