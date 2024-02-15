@@ -4,18 +4,14 @@ using UnityEngine;
 
 public class MotherKarenCreator : MonoBehaviour
 {
-    public GameObject karen;
-
-    private List<GameObject> KarenList;
-
+    public KarenClass[] karens;
     // Start is called before the first frame update
     void Start()
     {
-        KarenList = new List<GameObject>();
-
-        GameObject newKaren = Instantiate(karen, new Vector3(0, 0, 0), Quaternion.identity);
-        
-        KarenList.Add(newKaren);
+        int randomIndex = Random.Range(0, karens.Length);
+        KarenClass randomObject = karens[randomIndex];
+        var position = new Vector3(Random.Range(-10, 10), Random.Range(-10, 10), 0);
+        Instantiate(randomObject, position, Quaternion.identity);
     }
 
     // Update is called once per frame

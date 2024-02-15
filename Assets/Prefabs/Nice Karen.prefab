@@ -11,8 +11,9 @@ GameObject:
   - component: {fileID: 5009593426370159972}
   - component: {fileID: 5009593426370159975}
   - component: {fileID: 5009593426370159974}
+  - component: {fileID: 1507523627008506660}
   m_Layer: 0
-  m_Name: Karens
+  m_Name: Nice Karen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -86,6 +87,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5009593426370159968}
   m_CullTransparentMesh: 0
+--- !u!114 &1507523627008506660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5009593426370159968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4b0b9a26333205418f1ce15774a20d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5009593426440016381
 GameObject:
   m_ObjectHideFlags: 0
