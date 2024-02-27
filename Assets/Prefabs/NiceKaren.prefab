@@ -104,8 +104,8 @@ MonoBehaviour:
   - Hi my name is Chin Chin can I have order #1 please.
   - Can you maybe hurry up please.
   - Thanks for giving me my order.
-  - good try but this is wrong can you please fix it.
-  - I'm sorry but I have to leave now bye and have a good day.
+  - Good try but this is wrong.
+  - I'm sorry I have to leave bye.
   waitTime: 45
 --- !u!1 &5009593426440016381
 GameObject:
