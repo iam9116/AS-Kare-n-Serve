@@ -22,7 +22,7 @@ public class CoffeePickerUper : MonoBehaviour
         if (other.gameObject.CompareTag("Coffee") && (Input.GetMouseButtonDown(0)))
         {
             isOverLapping = true;
-            Debug.Log("SlayTheHouseDownBestieYass");
+            Debug.Log("1234567891011121314151617181920");
         }
     }
 }

@@ -7,7 +7,7 @@ public enum CoffeeType
     BLACK = 0,
     ESPRESSO,
     LATTE,
-    MACCHIATO
+    ICED_CARAMEL_MACCHIATO
 }
 
 public class CoffeeClass : MonoBehaviour
