@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class CoffeePickerUper : MonoBehaviour
 {
-    private bool isOverLapping = false;
+    public GameObject Coffee;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -19,10 +20,14 @@ public class CoffeePickerUper : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("Coffee") && (Input.GetMouseButtonDown(0)))
+        if (other.gameObject.CompareTag("Coffee") && Input.GetButtonDown("Jump"))
         {
-            isOverLapping = true;
-            Debug.Log("1234567891011121314151617181920");
+            Debug.Log("Cawfee");
+            Debug.Log(other.gameObject.GetComponent<CoffeeClass>().type);
+
+            Coffee = Instantiate(other.gameObject, new Vector3(25f, 0, 0), Quaternion.identity);
+            Coffee.transform.parent = transform;
+
         }
     }
 }
