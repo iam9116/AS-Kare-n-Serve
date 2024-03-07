@@ -5,29 +5,45 @@ using UnityEngine;
 public class CoffeePickerUper : MonoBehaviour
 {
     public GameObject Coffee;
+    public KarenClass karenClass;
+
+    private GameObject currentlyHeldCoffee;
+    private bool isHoldingCoffee = false;
+    private CoffeeType coffeeType;
 
     // Start is called before the first frame update
     void Start()
     {
-       
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetButtonDown("Jump") && !isHoldingCoffee)
+        {
+            Coffee = Instantiate(currentlyHeldCoffee, new Vector3(50f, -10, 0), Quaternion.identity);
+            Coffee.transform.parent = transform;
+            isHoldingCoffee = true;
+        }
+
+        if (Input.GetButtonDown("Jump"))
+        {
+            Debug.Log("☆*: .｡. o(≧▽≦)o .｡.:*☆");
+        }
+    }
+
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Coffee"))
+        {
+            currentlyHeldCoffee = collision.gameObject;
+        }
     }
 
     private void OnTriggerStay2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("Coffee") && Input.GetButtonDown("Jump"))
-        {
-            Debug.Log("Cawfee");
-            Debug.Log(other.gameObject.GetComponent<CoffeeClass>().type);
 
-            Coffee = Instantiate(other.gameObject, new Vector3(25f, 0, 0), Quaternion.identity);
-            Coffee.transform.parent = transform;
-
-        }
     }
 }

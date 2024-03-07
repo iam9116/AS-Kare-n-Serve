@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5009593426370159975}
   - component: {fileID: 5009593426370159974}
   - component: {fileID: 1507523627008506660}
+  - component: {fileID: -5331927193639049731}
   m_Layer: 0
   m_Name: NiceKaren
   m_TagString: Untagged
@@ -107,6 +108,18 @@ MonoBehaviour:
   - Good try but this is wrong.
   - I'm sorry I have to leave bye.
   waitTime: 45
+--- !u!114 &-5331927193639049731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5009593426370159968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e20fbf9385711b49bbf5c34b520dd5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5009593426440016381
 GameObject:
   m_ObjectHideFlags: 0

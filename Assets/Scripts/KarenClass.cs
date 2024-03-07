@@ -15,7 +15,8 @@ public class KarenClass : MonoBehaviour
     {
         text = GetComponentInChildren<TextMeshPro>();
 
-        if (KarenSpeech != null){
+        if (KarenSpeech != null)
+        {
             ChangeText(KarenSpeech[0]);
         }
     }
