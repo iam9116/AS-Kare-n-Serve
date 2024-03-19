@@ -7,7 +7,6 @@ public class KarenClass : MonoBehaviour
 {
     public List<string> KarenSpeech;
     public float waitTime = 45f;
-
     private TMPro.TextMeshPro text;
 
     // Start is called before the first frame update
@@ -32,4 +31,17 @@ public class KarenClass : MonoBehaviour
         if (text == null) return;
         text.text = newText;
     }
+
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Coffee")
+        {
+            Debug.Log("There's coffee.");
+
+            var coffee = collision.GetComponent<CoffeeClass>();
+            Debug.Log(coffee.type);
+        }
+    }
 }
+

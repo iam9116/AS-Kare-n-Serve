@@ -9,7 +9,7 @@ public class CoffeePickerUper : MonoBehaviour
 
     private GameObject currentlyHeldCoffee;
     private bool isHoldingCoffee = false;
-    private CoffeeType coffeeType;
+    public CoffeeType coffeeType;
 
     // Start is called before the first frame update
     void Start()
@@ -22,14 +22,14 @@ public class CoffeePickerUper : MonoBehaviour
     {
         if (Input.GetButtonDown("Jump") && !isHoldingCoffee)
         {
-            Coffee = Instantiate(currentlyHeldCoffee, new Vector3(50f, -10, 0), Quaternion.identity);
+            Coffee = Instantiate(currentlyHeldCoffee, transform.position, Quaternion.identity);
             Coffee.transform.parent = transform;
             isHoldingCoffee = true;
         }
 
         if (Input.GetButtonDown("Jump"))
         {
-            Debug.Log("☆*: .｡. o(≧▽≦)o .｡.:*☆");
+            Debug.Log("☆*.｡. o(≧▽≦)o .｡.*☆");
         }
     }
 
