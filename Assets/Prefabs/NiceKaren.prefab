@@ -108,6 +108,7 @@ MonoBehaviour:
   - Good try but this is wrong.
   - I'm sorry I have to leave bye.
   waitTime: 45
+  iWantThis: 2
 --- !u!61 &7854081786501270966
 BoxCollider2D:
   m_ObjectHideFlags: 0

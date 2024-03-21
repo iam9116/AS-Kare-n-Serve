@@ -7,7 +7,9 @@ public class KarenClass : MonoBehaviour
 {
     public List<string> KarenSpeech;
     public float waitTime = 45f;
+    public CoffeeType iWantThis;
     private TMPro.TextMeshPro text;
+
 
     // Start is called before the first frame update
     void Start()
@@ -37,10 +39,21 @@ public class KarenClass : MonoBehaviour
     {
         if (collision.tag == "Coffee")
         {
-            Debug.Log("There's coffee.");
-
+            Debug.Log("There's coffee");
             var coffee = collision.GetComponent<CoffeeClass>();
             Debug.Log(coffee.type);
+            var marg = GameObject.Find("CoffeeAnchor").GetComponent<CoffeePickerUper>();
+
+            if (coffee.type == iWantThis)
+            {
+                ChangeText(KarenSpeech[2]);
+                Destroy(marg.Coffee);
+            }
+            else
+            {
+                ChangeText(KarenSpeech[3]);
+                Destroy(marg.Coffee);
+            }
         }
     }
 }

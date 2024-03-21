@@ -110,6 +110,7 @@ MonoBehaviour:
     because I need to go buy some Drunk Elephant from Sephora so bye bestie and try
     to slay more next time.
   waitTime: 30
+  iWantThis: 3
 --- !u!61 &5565332668352040636
 BoxCollider2D:
   m_ObjectHideFlags: 0

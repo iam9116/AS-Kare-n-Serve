@@ -7,7 +7,7 @@ public class CoffeePickerUper : MonoBehaviour
     public GameObject Coffee;
     public KarenClass karenClass;
 
-    private GameObject currentlyHeldCoffee;
+    public GameObject currentlyHeldCoffee;
     private bool isHoldingCoffee = false;
     public CoffeeType coffeeType;
 
