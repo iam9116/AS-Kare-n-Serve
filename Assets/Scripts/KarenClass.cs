@@ -48,11 +48,14 @@ public class KarenClass : MonoBehaviour
             {
                 ChangeText(KarenSpeech[2]);
                 Destroy(marg.Coffee);
+                marg.isHoldingCoffee = false;
+                ScoreManager.score++;
             }
             else
             {
                 ChangeText(KarenSpeech[3]);
                 Destroy(marg.Coffee);
+                marg.isHoldingCoffee = false;
             }
         }
     }

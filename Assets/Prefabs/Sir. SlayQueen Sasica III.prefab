@@ -186,11 +186,11 @@ MonoBehaviour:
   - Give me order #4 right now or I will speak to your manager.
   - I am very close to speaking to your manager.
   - Your lucky you gave me the right order.
-  - I am giving your one more chance and if you don't get it right your whole compant
+  - I am giving your one more chance and if you don't get it right your whole company
     is dead.
   - You just lost a valuable customer
   waitTime: 25
-  kawfee: {fileID: 1498232489113028691, guid: acea6026b1e80bc4f876836a501610e6, type: 3}
+  iWantThis: 0
 --- !u!61 &9158243073601723361
 BoxCollider2D:
   m_ObjectHideFlags: 0

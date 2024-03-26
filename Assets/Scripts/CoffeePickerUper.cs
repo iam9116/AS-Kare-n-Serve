@@ -8,7 +8,7 @@ public class CoffeePickerUper : MonoBehaviour
     public KarenClass karenClass;
 
     public GameObject currentlyHeldCoffee;
-    private bool isHoldingCoffee = false;
+    public bool isHoldingCoffee = false;
     public CoffeeType coffeeType;
 
     // Start is called before the first frame update
