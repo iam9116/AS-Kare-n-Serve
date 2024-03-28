@@ -9,7 +9,7 @@ public class KarenClass : MonoBehaviour
     public float waitTime = 45f;
     public CoffeeType iWantThis;
     private TMPro.TextMeshPro text;
-
+    public bool hasCoffee;
 
     // Start is called before the first frame update
     void Start()
@@ -50,12 +50,14 @@ public class KarenClass : MonoBehaviour
                 Destroy(marg.Coffee);
                 marg.isHoldingCoffee = false;
                 ScoreManager.score++;
+                hasCoffee = true;
             }
             else
             {
                 ChangeText(KarenSpeech[3]);
                 Destroy(marg.Coffee);
                 marg.isHoldingCoffee = false;
+                hasCoffee = false;
             }
         }
     }
