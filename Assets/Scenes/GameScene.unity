@@ -1081,6 +1081,10 @@ MonoBehaviour:
   - {fileID: 1507523627008506660, guid: 28d7af5f6980d48488e1b384ad4c4ade, type: 3}
   - {fileID: 1507523627008506660, guid: 7f2c5d67b5919924d86a9e65347f96bc, type: 3}
   - {fileID: 1507523627008506660, guid: 61be69475afeda442909e7ce5173753c, type: 3}
+  karenToSpawn: 1
+  radiusOfSpawn: 50
+  initialSpawn: 0
+  spawnRate: 5
 --- !u!4 &1835327963 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 716682060484272397, guid: 0861347bb46cde04f96fad612830e410,

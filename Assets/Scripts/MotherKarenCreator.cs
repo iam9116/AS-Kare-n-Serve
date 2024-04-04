@@ -5,15 +5,15 @@ using UnityEngine;
 public class MotherKarenCreator : MonoBehaviour
 {
     public KarenClass[] karens;
-
+    public int karenToSpawn;
+    public float radiusOfSpawn;
+    public float initialSpawn;
+    public float spawnRate;
 
     // Start is called before the first frame update
     void Start()
     {
-        int randomIndex = Random.Range(0, karens.Length);
-        KarenClass randomObject = karens[randomIndex];
-        Vector3 position = new Vector3(Random.Range(-10, 10), Random.Range(-10, 10), 0);
-        Instantiate(karens[randomIndex], position, Quaternion.identity);
+        InvokeRepeating("MakeMoreKarens", initialSpawn, spawnRate);
     }
 
     // Update is called once per frame
@@ -21,4 +21,28 @@ public class MotherKarenCreator : MonoBehaviour
     {
         
     }
+
+    void MakeMoreKarens()
+    {
+
+        Debug.Log("Run");
+        if (karenToSpawn <= 0) karenToSpawn = 1;
+        if (radiusOfSpawn < 5f) radiusOfSpawn = 20f;
+
+        for (int t = 0; t < karenToSpawn; t++)
+        {
+            //Get random number
+            int randomIndex = Random.Range(0, karens.Length);
+
+            //Get random karen based on random number
+            KarenClass randomObject = karens[randomIndex];
+
+            //Figure out where to position karen
+            Vector3 position = new Vector3(Random.Range(-radiusOfSpawn, radiusOfSpawn), Random.Range(-radiusOfSpawn, radiusOfSpawn), 0);
+
+            //Spawn karen
+            Instantiate(karens[randomIndex], position, Quaternion.identity);
+        }
+    }
+
 }

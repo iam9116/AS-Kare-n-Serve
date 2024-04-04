@@ -10,7 +10,7 @@ public class KarenClass : MonoBehaviour
     public CoffeeType iWantThis;
     private TMPro.TextMeshPro text;
     public bool hasCoffee;
-
+    public GameObject karen;
     // Start is called before the first frame update
     void Start()
     {
@@ -51,6 +51,7 @@ public class KarenClass : MonoBehaviour
                 marg.isHoldingCoffee = false;
                 ScoreManager.score++;
                 hasCoffee = true;
+                Invoke("KarenBurner", 2f);
             }
             else
             {
@@ -60,6 +61,11 @@ public class KarenClass : MonoBehaviour
                 hasCoffee = false;
             }
         }
+    }
+
+    private void KarenBurner()
+    {
+        Destroy(karen);
     }
 }
 

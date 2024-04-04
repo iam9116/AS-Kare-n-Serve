@@ -109,6 +109,8 @@ MonoBehaviour:
   - I'm sorry I have to leave bye.
   waitTime: 45
   iWantThis: 2
+  hasCoffee: 0
+  karen: {fileID: 5009593426370159968}
 --- !u!61 &7854081786501270966
 BoxCollider2D:
   m_ObjectHideFlags: 0

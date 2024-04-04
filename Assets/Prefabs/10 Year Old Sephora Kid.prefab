@@ -111,6 +111,8 @@ MonoBehaviour:
     to slay more next time.
   waitTime: 30
   iWantThis: 3
+  hasCoffee: 0
+  karen: {fileID: 5009593426370159968}
 --- !u!61 &5565332668352040636
 BoxCollider2D:
   m_ObjectHideFlags: 0
