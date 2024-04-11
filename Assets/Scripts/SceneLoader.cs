@@ -17,8 +17,23 @@ public class SceneLoader : MonoBehaviour
         
     }
 
-    void LoadScene()
+    public void LoadScene()
     {
         SceneManager.LoadScene(1);
+    }
+
+    public void LoadOtherScene()
+    {
+        SceneManager.LoadScene(0);
+    }
+
+    public void LoadOtherOtherScene()
+    {
+        SceneManager.LoadScene(2);
+    }
+
+    public void LoadOtherOtherOtherScene()
+    {
+        SceneManager.LoadScene(3);
     }
 }
