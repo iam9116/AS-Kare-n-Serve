@@ -59,6 +59,7 @@ public class KarenClass : MonoBehaviour
                 Destroy(marg.Coffee);
                 marg.isHoldingCoffee = false;
                 hasCoffee = false;
+                ScoreManager.score--;
             }
         }
     }

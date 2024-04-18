@@ -1084,7 +1084,7 @@ MonoBehaviour:
   karenToSpawn: 1
   radiusOfSpawn: 50
   initialSpawn: 0
-  spawnRate: 5
+  spawnRate: 4
 --- !u!4 &1835327963 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 716682060484272397, guid: 0861347bb46cde04f96fad612830e410,
@@ -1297,7 +1297,7 @@ GameObject:
   - component: {fileID: 2038738905}
   m_Layer: 0
   m_Name: Floor
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

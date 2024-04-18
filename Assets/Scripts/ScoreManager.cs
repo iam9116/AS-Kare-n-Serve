@@ -23,5 +23,10 @@ public class ScoreManager : MonoBehaviour
         GUIStyle myStyle = new GUIStyle(GUI.skin.label);
         myStyle.fontSize = 50;
         GUI.Label(rectangle, "Score: " + score, myStyle);
+
+        Rect rectanggle = new Rect(100, 100, 200, 400);
+        GUIStyle mySttyle = new GUIStyle(GUI.skin.label);
+        myStyle.fontSize = 50;
+        GUI.Label(rectangle, "Sanity: %" + score, myStyle);
     }
 }
