@@ -1084,7 +1084,7 @@ MonoBehaviour:
   karenToSpawn: 1
   radiusOfSpawn: 50
   initialSpawn: 0
-  spawnRate: 4
+  spawnRate: 4.5
 --- !u!4 &1835327963 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 716682060484272397, guid: 0861347bb46cde04f96fad612830e410,

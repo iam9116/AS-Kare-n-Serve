@@ -11,6 +11,9 @@ public class CoffeePickerUper : MonoBehaviour
     public bool isHoldingCoffee = false;
     public CoffeeType coffeeType;
 
+    private KarenClass karenRef;
+    private string interactingObj;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,26 +23,50 @@ public class CoffeePickerUper : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Jump") && !isHoldingCoffee)
-        {
-            Coffee = Instantiate(currentlyHeldCoffee, transform.position, Quaternion.identity);
-            Coffee.transform.parent = transform;
-            isHoldingCoffee = true;
-        }
-
         if (Input.GetButtonDown("Jump"))
         {
-            Debug.Log("☆*.｡. o(≧▽≦)o .｡.*☆");
+            if (interactingObj == "Coffee" && !isHoldingCoffee)
+            {
+                Coffee = Instantiate(currentlyHeldCoffee, transform.position, Quaternion.identity);
+                Coffee.transform.parent = transform;
+                isHoldingCoffee = true;
+            }
+
+            if (interactingObj == "Karen" && isHoldingCoffee)
+            {
+                karenRef.KarenTakesCoffee(this, coffeeType);
+            }
         }
     }
 
+    public void KarenSays(bool response)
+    {
+        if (response)
+        {
+            //If order is right code here
+        }
+        else
+        {
+            //If order is wrong code here
+        }
+
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Coffee"))
+        interactingObj = collision.gameObject.tag;
+
+        switch (interactingObj)
         {
-            currentlyHeldCoffee = collision.gameObject;
+            case "Coffee":
+                //Get a reference to the overlapped coffee object
+                currentlyHeldCoffee = collision.gameObject;
+                break;
+            case "Karen":
+                karenRef = collision.gameObject.GetComponent<KarenClass>();
+                break;
         }
+        
     }
 
     private void OnTriggerStay2D(Collider2D other)

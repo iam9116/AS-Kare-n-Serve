@@ -5,6 +5,7 @@ using UnityEngine;
 public class ScoreManager : MonoBehaviour
 {
     public static int score = 0;
+    public static int sanity = 100;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,9 +25,9 @@ public class ScoreManager : MonoBehaviour
         myStyle.fontSize = 50;
         GUI.Label(rectangle, "Score: " + score, myStyle);
 
-        Rect rectanggle = new Rect(100, 100, 200, 400);
-        GUIStyle mySttyle = new GUIStyle(GUI.skin.label);
+        rectangle = new Rect(75, 100, 300, 500);
+        myStyle = new GUIStyle(GUI.skin.label);
         myStyle.fontSize = 50;
-        GUI.Label(rectangle, "Sanity: %" + score, myStyle);
+        GUI.Label(rectangle, "Sanity:%" + score, myStyle);
     }
 }
