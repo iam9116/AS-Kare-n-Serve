@@ -1082,9 +1082,9 @@ MonoBehaviour:
   - {fileID: 1507523627008506660, guid: 7f2c5d67b5919924d86a9e65347f96bc, type: 3}
   - {fileID: 1507523627008506660, guid: 61be69475afeda442909e7ce5173753c, type: 3}
   karenToSpawn: 1
-  radiusOfSpawn: 50
+  radiusOfSpawn: 60
   initialSpawn: 0
-  spawnRate: 4.5
+  spawnRate: 5
 --- !u!4 &1835327963 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 716682060484272397, guid: 0861347bb46cde04f96fad612830e410,
@@ -1701,12 +1701,12 @@ PrefabInstance:
     - target: {fileID: 8258849893496877748, guid: 8ed91e07931ca1e4b809e4f2bfd46c56,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 13.488204
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8258849893496877748, guid: 8ed91e07931ca1e4b809e4f2bfd46c56,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 14.30971
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8258849893496877748, guid: 8ed91e07931ca1e4b809e4f2bfd46c56,
         type: 3}

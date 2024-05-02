@@ -31,23 +31,6 @@ public class CoffeePickerUper : MonoBehaviour
                 Coffee.transform.parent = transform;
                 isHoldingCoffee = true;
             }
-
-            if (interactingObj == "Karen" && isHoldingCoffee)
-            {
-                karenRef.KarenTakesCoffee(this, coffeeType);
-            }
-        }
-    }
-
-    public void KarenSays(bool response)
-    {
-        if (response)
-        {
-            //If order is right code here
-        }
-        else
-        {
-            //If order is wrong code here
         }
 
     }

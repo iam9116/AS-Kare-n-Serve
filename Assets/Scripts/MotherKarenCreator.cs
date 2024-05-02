@@ -10,6 +10,9 @@ public class MotherKarenCreator : MonoBehaviour
     public float initialSpawn;
     public float spawnRate;
 
+    private float xOffset = 0f;
+    private float yOffset = 0f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -24,10 +27,22 @@ public class MotherKarenCreator : MonoBehaviour
 
     void MakeMoreKarens()
     {
-
-        Debug.Log("Run");
         if (karenToSpawn <= 0) karenToSpawn = 1;
-        if (radiusOfSpawn < 5f) radiusOfSpawn = 20f;
+        if (radiusOfSpawn <1f) radiusOfSpawn = 20f;
+
+        if (xOffset > 150f)
+        {
+            xOffset = 0f;
+            yOffset += 50f;
+        }
+
+        if (yOffset > 80f)
+        {
+            yOffset = -92;
+            xOffset = 0;
+        }
+
+
 
         for (int t = 0; t < karenToSpawn; t++)
         {
@@ -37,11 +52,14 @@ public class MotherKarenCreator : MonoBehaviour
             //Get random karen based on random number
             KarenClass randomObject = karens[randomIndex];
 
+
             //Figure out where to position karen
-            Vector3 position = new Vector3(Random.Range(-radiusOfSpawn, radiusOfSpawn), Random.Range(-radiusOfSpawn, radiusOfSpawn), 0);
+            Vector3 position = new Vector3(xOffset, yOffset, 0);
 
             //Spawn karen
             Instantiate(karens[randomIndex], position, Quaternion.identity);
+
+            xOffset += 50f;
         }
     }
 
