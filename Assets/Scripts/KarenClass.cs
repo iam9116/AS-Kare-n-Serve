@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEditor.SceneManagement;
+using UnityEngine.SceneManagement;
 
 public class KarenClass : MonoBehaviour
 {
@@ -65,12 +67,26 @@ public class KarenClass : MonoBehaviour
                 hasCoffee = false;
                 ScoreManager.sanity -= 20;
             }
+            SceneLoader();
         }
     }
 
     private void KarenBurner()
     {
         Destroy(karen);
+    }
+
+    private void SceneLoader()
+    {
+        if (ScoreManager.sanity == 0)
+        {
+            SceneManager.LoadScene(4);
+        }
+
+        if (ScoreManager.score == 10)
+        {
+            SceneManager.LoadScene(5);
+        }
     }
 }
 
