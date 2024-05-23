@@ -731,6 +731,55 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 936503386}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1054506996
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1054506998}
+  - component: {fileID: 1054506997}
+  m_Layer: 0
+  m_Name: EvilSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1054506997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1054506996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 289ec7c049b09c841ba5a3851f777bc8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  evilkarens:
+  - {fileID: -2971032087005878389, guid: 3fea376b9615e674d92d5c762d4d335e, type: 3}
+  karenToSpawn: 1
+  radiusOfSpawn: 50
+  initialSpawn: 0
+  spawnRate: 12
+--- !u!4 &1054506998
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1054506996}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1147629637 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1498232489113028690, guid: acea6026b1e80bc4f876836a501610e6,
@@ -1767,6 +1816,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Barista
+      objectReference: {fileID: 0}
+    - target: {fileID: 8258849893496877750, guid: 8ed91e07931ca1e4b809e4f2bfd46c56,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 8258849893496877751, guid: 8ed91e07931ca1e4b809e4f2bfd46c56,
         type: 3}
