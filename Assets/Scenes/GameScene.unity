@@ -765,7 +765,7 @@ MonoBehaviour:
   karenToSpawn: 1
   radiusOfSpawn: 50
   initialSpawn: 0
-  spawnRate: 12
+  spawnRate: 10
 --- !u!4 &1054506998
 Transform:
   m_ObjectHideFlags: 0
