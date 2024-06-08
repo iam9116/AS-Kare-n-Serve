@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: -51902764880268052}
   - component: {fileID: -2971032087005878389}
   m_Layer: 0
-  m_Name: "EVIL\U0001F608\U0001F608"
+  m_Name: Banana
   m_TagString: Karen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29,7 +29,7 @@ RectTransform:
   m_GameObject: {fileID: 5009593426370159968}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.47497, y: 0.44988, z: 1}
+  m_LocalScale: {x: 2.181453, y: 2.314069, z: 1}
   m_Children:
   - {fileID: 5009593426440016370}
   m_Father: {fileID: 0}
@@ -37,8 +37,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.76, y: 3.73}
-  m_SizeDelta: {x: 9.121643, y: 12.4609375}
+  m_AnchoredPosition: {x: 1.76, y: 5.6985}
+  m_SizeDelta: {x: 32.689598, y: 25.333351}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!23 &5009593426370159975
 MeshRenderer:
@@ -196,7 +196,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 36708e6a502a6ff42b54fafa8a7488c4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2476f966452ae8f42b00d1d2d631a68f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

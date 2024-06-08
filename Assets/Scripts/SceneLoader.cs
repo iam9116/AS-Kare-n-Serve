@@ -36,4 +36,14 @@ public class SceneLoader : MonoBehaviour
     {
         SceneManager.LoadScene(3);
     }
+
+    public void LoadOtherOtherOtherOtherScene()
+    {
+        SceneManager.LoadScene(6);
+    }
+
+    public void LoadOtherOtherOtherOtherOtherScene()
+    {
+        SceneManager.LoadScene(7);
+    }
 }

@@ -742,7 +742,7 @@ GameObject:
   - component: {fileID: 1054506998}
   - component: {fileID: 1054506997}
   m_Layer: 0
-  m_Name: EvilSpawner
+  m_Name: BananaSpawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -764,7 +764,7 @@ MonoBehaviour:
   - {fileID: -2971032087005878389, guid: 3fea376b9615e674d92d5c762d4d335e, type: 3}
   karenToSpawn: 1
   radiusOfSpawn: 50
-  initialSpawn: 0
+  initialSpawn: 5
   spawnRate: 10
 --- !u!4 &1054506998
 Transform:
@@ -917,18 +917,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.04546511, y: 0.07653803}
+  m_Offset: {x: 0.026801586, y: 0.09018141}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 5, y: 5}
+    oldSize: {x: 2.17, y: 2.32}
     newSize: {x: 4.84, y: 5.16}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.6574609, y: 3.7823143}
+  m_Size: {x: 0.4629848, y: 1.5836219}
   m_EdgeRadius: 0
 --- !u!1 &1404745870
 GameObject:
@@ -992,7 +992,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 2.55}
+  m_Offset: {x: 0.021457613, y: 1.0530994}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1003,7 +1003,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.35626882, y: 0.37226474}
   m_EdgeRadius: 0
 --- !u!1 &1406594158
 GameObject:
@@ -1659,6 +1659,11 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: -0.035931468
       objectReference: {fileID: 0}
+    - target: {fileID: 2015274022328396858, guid: f747ac0fefe5d8f428619cee5fd13a52,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2015274022328396863, guid: f747ac0fefe5d8f428619cee5fd13a52,
         type: 3}
       propertyPath: m_Name
@@ -1750,12 +1755,12 @@ PrefabInstance:
     - target: {fileID: 8258849893496877748, guid: 8ed91e07931ca1e4b809e4f2bfd46c56,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 8
+      value: 35.77
       objectReference: {fileID: 0}
     - target: {fileID: 8258849893496877748, guid: 8ed91e07931ca1e4b809e4f2bfd46c56,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 8
+      value: 31.797821
       objectReference: {fileID: 0}
     - target: {fileID: 8258849893496877748, guid: 8ed91e07931ca1e4b809e4f2bfd46c56,
         type: 3}
@@ -1836,12 +1841,17 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 1b23b3a402884b14181a34024710000c,
+      objectReference: {fileID: 21300000, guid: 993ef2dbbb99b1e4194ea6cd97e85829,
         type: 3}
     - target: {fileID: 8258849893496877751, guid: 8ed91e07931ca1e4b809e4f2bfd46c56,
         type: 3}
       propertyPath: m_WasSpriteAssigned
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8258849893496877754, guid: 8ed91e07931ca1e4b809e4f2bfd46c56,
+        type: 3}
+      propertyPath: speed
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8ed91e07931ca1e4b809e4f2bfd46c56, type: 3}

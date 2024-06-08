@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 590f605fed1463043828134c464ad21f
   - enabled: 1
-    path: Assets/Scenes/GameScene.unity
+    path: Assets/Scenes/ManGameScene.unity
     guid: 82db881e161a0a84e8e3c8a6b941b652
   - enabled: 1
     path: Assets/Scenes/Controls.unity
@@ -23,4 +23,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GameWin.unity
     guid: e99ec7b63729bd346b10fca92260ec9f
+  - enabled: 1
+    path: Assets/Scenes/FemaleGameScene 1.unity
+    guid: 61351e50e3c71fa46a994577564c008a
+  - enabled: 1
+    path: Assets/Scenes/BaristaChoose.unity
+    guid: c9743043e41eaab46994e3996ed17a58
   m_configObjects: {}

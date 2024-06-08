@@ -109,10 +109,11 @@ MonoBehaviour:
   - Bestie I am out of time so give my money back cause I literally ran out of time
     because I need to go buy some Drunk Elephant from Sephora so bye bestie and try
     to slay more next time.
-  waitTime: 30
   iWantThis: 3
-  hasCoffee: 0
   karen: {fileID: 5009593426370159968}
+  waitTime: 30
+  sanityToLose: 10
+  hasCoffee: 0
 --- !u!61 &5565332668352040636
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -126,7 +127,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.03201294, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -137,7 +138,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 50.713196, y: 50.222656}
   m_EdgeRadius: 0
 --- !u!1 &5009593426440016381
 GameObject:
@@ -209,7 +210,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 36708e6a502a6ff42b54fafa8a7488c4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b21c1274502dea64a9fdebde0cd855f3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

@@ -62,5 +62,4 @@ public class EvilKarenCreator : MonoBehaviour
             xOffset += 50f;
         }
     }
-
 }
