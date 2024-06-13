@@ -13,6 +13,10 @@ public class EvilKarenCreator : MonoBehaviour
     private float xOffset = 0f;
     private float yOffset = 0f;
 
+    private float maxY = 28f;
+    private float minY = -89f;
+    private float maxX = 165;
+    private float minX = -170;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,20 +31,22 @@ public class EvilKarenCreator : MonoBehaviour
 
     void MakeMoreKarens()
     {
-        //if (karenToSpawn <= 0) karenToSpawn = 1;
-        //if (radiusOfSpawn < 1f) radiusOfSpawn = 20f;
+        /*
+        if (karentospawn <= 0) karentospawn = 1;
+        if (radiusofspawn < 1f) radiusofspawn = 20f;
 
-        //if (xOffset > 150f)
-        //{
-        //    xOffset = 0f;
-        //    yOffset += 50f;
-        //}
+        if (xoffset > 150f)
+        {
+            xoffset = 0f;
+            yoffset += 50f;
+        }
 
-        //if (yOffset > 80f)
-        //{
-        //    yOffset = -92;
-        //    xOffset = 0;
-        //}
+        if (yoffset > 80f)
+        {
+            yoffset = -92;
+            xoffset = 0;
+        }
+        */
 
 
 
@@ -53,13 +59,17 @@ public class EvilKarenCreator : MonoBehaviour
             EvilKarenClass randomObject = evilkarens[randomIndex];
 
 
-            //Figure out where to position karen
+            //Figure out where to position banana
             Vector3 position = new Vector3(xOffset, yOffset, 0);
 
             //Spawn karen
             Instantiate(evilkarens[randomIndex], position, Quaternion.identity);
 
-            xOffset += 50f;
+            xOffset = 0f;
+            yOffset = 0f;
+
+            xOffset += Random.Range(minX, maxX);
+            yOffset += Random.Range(minY, maxY);
         }
     }
 }
