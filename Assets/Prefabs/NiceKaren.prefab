@@ -102,7 +102,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   KarenSpeech:
-  - Hi my name is Chin Chin can I have order #1 please.
+  - Hi my name is Margaret can I have order #1 please.
   - Can you maybe hurry up please.
   - Thanks for giving me my order.
   - Good try but this is wrong.
@@ -125,7 +125,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.22039795, y: -0.027038574}
+  m_Offset: {x: -2.8626404, y: -12.216919}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -136,7 +136,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 51.580444, y: 49.559326}
+  m_Size: {x: 80.65387, y: 55.727173}
   m_EdgeRadius: 0
 --- !u!1 &5009593426440016381
 GameObject:
@@ -163,8 +163,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5009593426440016381}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -7.4}
-  m_LocalScale: {x: 10, y: 10, z: 1}
+  m_LocalPosition: {x: -1.76, y: -18.36, z: -7.4}
+  m_LocalScale: {x: 10.442163, y: 6.600325, z: 1}
   m_Children: []
   m_Father: {fileID: 5009593426370159972}
   m_RootOrder: 0
@@ -208,7 +208,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -1
-  m_Sprite: {fileID: 21300000, guid: b21c1274502dea64a9fdebde0cd855f3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 154f584c9f5239845beb7ed57d06a103, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
