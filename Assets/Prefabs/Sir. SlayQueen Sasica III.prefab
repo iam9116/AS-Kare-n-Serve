@@ -183,8 +183,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   KarenSpeech:
-  - Give me order #4 right now or I will speak to your manager.
-  - I am very close to speaking to your manager.
+  - My name is Sir. SlayQueen Sasica III give me order #4 right now or I will speak
+    to your manager.
+  - I am very close to speaking to your manager remember my order it is the one that
+    is closest to the place where all of the customers are.
   - Your lucky you gave me the right order.
   - I am giving your one more chance and if you don't get it right your whole company
     is dead.

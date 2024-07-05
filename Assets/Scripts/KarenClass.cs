@@ -16,6 +16,7 @@ public class KarenClass : MonoBehaviour
     public int sanityToLose = 10;
 
     private TMPro.TextMeshPro text;
+    private SpawnPoint_Tool spawnPoint;
 
     public bool hasCoffee;
 
@@ -28,6 +29,13 @@ public class KarenClass : MonoBehaviour
         {
             ChangeText(KarenSpeech[0]);
         }
+
+        Invoke("KarenWarning", 15f);
+    }
+
+    void OnDestroy()
+    {
+        spawnPoint.isOccupied = false;
     }
 
     // Update is called once per frame
@@ -40,6 +48,11 @@ public class KarenClass : MonoBehaviour
     {
         if (text == null) return;
         text.text = newText;
+    }
+
+    public void ToggleCheckPoint(SpawnPoint_Tool spawnCheck)
+    {
+        spawnPoint = spawnCheck;
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -69,6 +82,12 @@ public class KarenClass : MonoBehaviour
             }
             SceneLoader();
         }
+    }
+
+    private void KarenWarning()
+    {
+        ChangeText(KarenSpeech[1]);
+        Invoke("KarenBurner", waitTime);
     }
 
     private void KarenBurner()

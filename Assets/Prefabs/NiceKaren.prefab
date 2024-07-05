@@ -103,13 +103,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   KarenSpeech:
   - Hi my name is Margaret can I have order #1 please.
-  - Can you maybe hurry up please.
+  - Can you maybe hurry up please my order was the first one to the left.
   - Thanks for giving me my order.
   - Good try but this is wrong.
   - I'm sorry I have to leave bye.
   iWantThis: 2
   karen: {fileID: 5009593426370159968}
-  waitTime: 45
+  waitTime: 10
   sanityToLose: 10
   hasCoffee: 0
 --- !u!61 &7854081786501270966

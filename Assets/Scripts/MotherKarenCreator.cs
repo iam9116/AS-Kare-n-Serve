@@ -9,14 +9,14 @@ public class MotherKarenCreator : MonoBehaviour
     public float radiusOfSpawn;
     public float initialSpawn;
     public float spawnRate;
-
-    private float xOffset = 0f;
-    private float yOffset = 0f;
-
+    
+    private GameObject[] spawnPoints;
+    
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating("MakeMoreKarens", initialSpawn, spawnRate);
+        spawnPoints = GameObject.FindGameObjectsWithTag("SpawnPoint");
+        InvokeRepeating("MakeKarens", initialSpawn, spawnRate);
     }
 
     // Update is called once per frame
@@ -25,42 +25,28 @@ public class MotherKarenCreator : MonoBehaviour
         
     }
 
-    void MakeMoreKarens()
+    void MakeKarens()
     {
-        if (karenToSpawn <= 0) karenToSpawn = 1;
-        if (radiusOfSpawn <1f) radiusOfSpawn = 20f;
+        //Get random number
+        int randomIndex = Random.Range(0, karens.Length);
 
-        if (xOffset > 150f)
+        //Random position
+        int randomPosIndex = Random.Range(0, spawnPoints.Length);
+        SpawnPoint_Tool spawnPoint = spawnPoints[randomPosIndex].GetComponent<SpawnPoint_Tool>();
+        bool isOccupied = spawnPoint.isOccupied;
+
+        while (isOccupied)
         {
-            xOffset = 0f;
-            yOffset += 50f;
+            randomPosIndex = Random.Range(0, spawnPoints.Length);
+            spawnPoint = spawnPoints[randomPosIndex].GetComponent<SpawnPoint_Tool>();
+            isOccupied = spawnPoint.isOccupied;
         }
 
-        if (yOffset > 80f)
-        {
-            yOffset = -92;
-            xOffset = 0;
-        }
+        Vector3 randomPos = spawnPoints[randomPosIndex].transform.position;
 
-
-
-        for (int t = 0; t < karenToSpawn; t++)
-        {
-            //Get random number
-            int randomIndex = Random.Range(0, karens.Length);
-
-            //Get random karen based on random number
-            KarenClass randomObject = karens[randomIndex];
-
-
-            //Figure out where to position karen
-            Vector3 position = new Vector3(xOffset, yOffset, 0);
-
-            //Spawn karen
-            Instantiate(karens[randomIndex], position, Quaternion.identity);
-
-            xOffset += 50f;
-        }
+        //Spawn karen
+        KarenClass karen = Instantiate(karens[randomIndex], randomPos, Quaternion.identity);
+        karen.ToggleCheckPoint(spawnPoint);
+        
     }
-
 }

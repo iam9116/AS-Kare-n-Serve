@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1507523627008506660}
   - component: {fileID: 5565332668352040636}
   m_Layer: 0
-  m_Name: 10 Year Old Sephora Kid
+  m_Name: 10 Year Old Sephora Kid 1
   m_TagString: Karen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -103,7 +103,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   KarenSpeech:
   - I'm Miss. Slay McPeriod Queen Give Me Order #3 Please.
-  - I am literally running out of time like hurry up and start slaying or else.
+  - I am literally running out of time like hurry up and start slaying or else my
+    order was the one next ot the pink one.
   - Slay bestie period.
   - Umm bestie this is literally wrong so like, try again...
   - Bestie I am out of time so give my money back cause I literally ran out of time
