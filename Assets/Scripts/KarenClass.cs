@@ -53,6 +53,7 @@ public class KarenClass : MonoBehaviour
     public void ToggleCheckPoint(SpawnPoint_Tool spawnCheck)
     {
         spawnPoint = spawnCheck;
+        spawnPoint.isOccupied = true;
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
