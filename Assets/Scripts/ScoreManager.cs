@@ -20,12 +20,12 @@ public class ScoreManager : MonoBehaviour
 
     private void OnGUI()
     {
-        Rect rectangle = new Rect(10, 10, 200, 400);
+        Rect rectangle = new Rect(175, 10, 200, 400);
         GUIStyle myStyle = new GUIStyle(GUI.skin.label);
         myStyle.fontSize = 50;
         GUI.Label(rectangle, "Score: " + score, myStyle);
 
-        rectangle = new Rect(10, 100, 300, 500);
+        rectangle = new Rect(175, 100, 300, 500);
         myStyle = new GUIStyle(GUI.skin.label);
         myStyle.fontSize = 50;
         GUI.Label(rectangle, "Sanity%:" + sanity, myStyle);

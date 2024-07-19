@@ -35,12 +35,7 @@ public class MotherKarenCreator : MonoBehaviour
         SpawnPoint_Tool spawnPoint = spawnPoints[randomPosIndex].GetComponent<SpawnPoint_Tool>();
         bool isOccupied = spawnPoint.isOccupied;
 
-        while (isOccupied)
-        {
-            randomPosIndex = Random.Range(0, spawnPoints.Length);
-            spawnPoint = spawnPoints[randomPosIndex].GetComponent<SpawnPoint_Tool>();
-            isOccupied = spawnPoint.isOccupied;
-        }
+        if (isOccupied) return;
 
         Vector3 randomPos = spawnPoints[randomPosIndex].transform.position;
 
