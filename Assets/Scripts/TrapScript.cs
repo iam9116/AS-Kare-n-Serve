@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EvilKarenClass : MonoBehaviour
+public class TrapScript : MonoBehaviour
 {
-    public GameObject EvilKaren;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        Invoke("BananaBurner", Random.Range(2, 8));
     }
 
     // Update is called once per frame
@@ -22,11 +22,11 @@ public class EvilKarenClass : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             ScoreManager.score -= 1;
-            Invoke("EvilKarenBurner", 1f);
+            Invoke("BananaBurner", 1f);
         }
     }
-    private void EvilKarenBurner()
+    private void BananaBurner()
     {
-        Destroy(EvilKaren);
+        Destroy(gameObject);
     }
 }

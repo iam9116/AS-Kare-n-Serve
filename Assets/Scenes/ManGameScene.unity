@@ -745,7 +745,7 @@ Transform:
   - {fileID: 936503387}
   - {fileID: 272033633}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &534753764
 PrefabInstance:
@@ -944,7 +944,7 @@ Transform:
   - {fileID: 1929604499}
   - {fileID: 1177727244}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &862836197
 GameObject:
@@ -1304,12 +1304,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 289ec7c049b09c841ba5a3851f777bc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  evilkarens:
-  - {fileID: -2971032087005878389, guid: 3fea376b9615e674d92d5c762d4d335e, type: 3}
-  karenToSpawn: 1
-  radiusOfSpawn: 50
+  prefab: {fileID: 4329838946640670505, guid: 39581a7e6edc5d64a8d85f450ee2debb, type: 3}
   initialSpawn: 5
   spawnRate: 8
+  minX: -168.7
+  maxX: 168.7
+  minY: -91.4
+  maxY: 59.1
 --- !u!4 &1054506998
 Transform:
   m_ObjectHideFlags: 0
@@ -1322,7 +1323,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1147629637 stripped
 Transform:
@@ -1733,7 +1734,7 @@ Transform:
   - {fileID: 1228480657}
   - {fileID: 211243132}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1467023073
 GameObject:
@@ -1776,7 +1777,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1488076018 stripped
 Transform:
@@ -1933,7 +1934,7 @@ GameObject:
   - component: {fileID: 1546939341}
   - component: {fileID: 1546939342}
   m_Layer: 0
-  m_Name: Spawner
+  m_Name: KarenSpawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1973,7 +1974,7 @@ MonoBehaviour:
   karenToSpawn: 1
   radiusOfSpawn: 60
   initialSpawn: 0
-  spawnRate: 4.5
+  spawnRate: 1
 --- !u!1001 &1628382612
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2203,7 +2204,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1929604499 stripped
 Transform:
