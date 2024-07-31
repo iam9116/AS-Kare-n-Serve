@@ -1974,7 +1974,7 @@ MonoBehaviour:
   karenToSpawn: 1
   radiusOfSpawn: 60
   initialSpawn: 0
-  spawnRate: 1
+  spawnRate: 3.74
 --- !u!1001 &1628382612
 PrefabInstance:
   m_ObjectHideFlags: 0

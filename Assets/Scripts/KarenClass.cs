@@ -12,7 +12,7 @@ public class KarenClass : MonoBehaviour
     public GameObject karen;
 
     //Tweakables
-    public float waitTime = 45f;
+    public float waitTime = 25f;
     public int sanityToLose = 10;
 
     private TMPro.TextMeshPro text;
@@ -20,6 +20,7 @@ public class KarenClass : MonoBehaviour
 
     public bool hasCoffee;
 
+    private BoxCollider2D boxCollider;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,7 +31,9 @@ public class KarenClass : MonoBehaviour
             ChangeText(KarenSpeech[0]);
         }
 
-        Invoke("KarenWarning", 15f);
+        Invoke("KarenWarning", 12f);
+
+        boxCollider = GetComponent<BoxCollider2D>();
     }
 
     void OnDestroy()
@@ -72,6 +75,7 @@ public class KarenClass : MonoBehaviour
                 ScoreManager.score++;
                 hasCoffee = true;
                 Invoke("KarenBurner", 2f);
+                boxCollider.enabled = false;
             }
             else
             {

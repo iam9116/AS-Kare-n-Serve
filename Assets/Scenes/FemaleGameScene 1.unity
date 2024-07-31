@@ -1261,12 +1261,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 289ec7c049b09c841ba5a3851f777bc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  evilkarens:
-  - {fileID: -2971032087005878389, guid: 3fea376b9615e674d92d5c762d4d335e, type: 3}
-  karenToSpawn: 1
-  radiusOfSpawn: 50
+  prefab: {fileID: 0}
   initialSpawn: 5
   spawnRate: 10
+  minX: 0
+  maxX: 0
+  minY: 0
+  maxY: 0
 --- !u!4 &1054506998
 Transform:
   m_ObjectHideFlags: 0
@@ -2587,6 +2588,11 @@ PrefabInstance:
       propertyPath: GamePausePanel
       value: 
       objectReference: {fileID: 1152067745065834750}
+    - target: {fileID: 1033966650044069251, guid: 93399fbacd954b841bb53fb8d72713aa,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -886
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 93399fbacd954b841bb53fb8d72713aa, type: 3}
 --- !u!1 &1152067745065834750 stripped
@@ -2933,7 +2939,7 @@ PrefabInstance:
     - target: {fileID: 8258849893496877754, guid: 8ed91e07931ca1e4b809e4f2bfd46c56,
         type: 3}
       propertyPath: speed
-      value: 20
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8ed91e07931ca1e4b809e4f2bfd46c56, type: 3}
