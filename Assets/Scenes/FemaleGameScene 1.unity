@@ -1261,13 +1261,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 289ec7c049b09c841ba5a3851f777bc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 0}
+  prefab: {fileID: 4329838946640670505, guid: 39581a7e6edc5d64a8d85f450ee2debb, type: 3}
   initialSpawn: 5
-  spawnRate: 10
-  minX: 0
-  maxX: 0
-  minY: 0
-  maxY: 0
+  spawnRate: 8
+  minX: -168.7
+  maxX: 168.7
+  minY: -91.4
+  maxY: 59.1
 --- !u!4 &1054506998
 Transform:
   m_ObjectHideFlags: 0
