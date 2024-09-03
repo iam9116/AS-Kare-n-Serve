@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1507523627008506660}
   - component: {fileID: -51902764880268052}
   m_Layer: 0
-  m_Name: Freaky Karen
+  m_Name: Jiafei Karen
   m_TagString: Karen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -102,11 +102,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   KarenSpeech:
-  - Give me order #2 NOW and make sure it's extra FREAKY.
+  - Give me order #2 NOW and make sure it's extra floptropican style.
   - I want my order NOW!!! My order was the one next to the brown one.
   - This is actually the right order!?
-  - This is not right go fix my order or I will have to form my own cloud right here
-  - I have to go you took way too long and my cloud forming session is WAYYY overdue.
+  - This is not right go fix my order or I will not hesitate to use my aesthetic
+    scream.
+  - 'I have to go you took way too long *AESTHETIC JIAFEI SCREAM*. '
   iWantThis: 1
   karen: {fileID: 5009593426370159968}
   waitTime: 35

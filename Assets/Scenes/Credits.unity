@@ -155,11 +155,11 @@ RectTransform:
   m_Father: {fileID: 454441975}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -914.99, y: 502.66003}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 150.01013, y: 74.6839}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0, y: 1}
 --- !u!114 &375934997
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -518,7 +518,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: e3265ab4bf004d28a9537516768c1c75, type: 3}
-    m_FontSize: 45
+    m_FontSize: 42
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -533,12 +533,13 @@ MonoBehaviour:
     make this game a reality and thank you to the founder(s) of Code Ninjas for making
     this place simply exist. I also want to thank my best best best best best best
     best best best best best best best best best best friend for giving me fun ideas
-    for my game and for existing. I would also like the spefically thank my sensi's
-    William, Margaret, Owen, and Madeline for helping me make this project and giving
-    me ideas to make my game more enjoyable for the player and for helping me with
-    my big issues in the game.I finally want to thank my parents for supporting me
-    throughout my still happening coding journey and giving me the things I need
-    to continue coding.
+    for my game and for existing. I would also like the spefically thank my sensei
+    William, Margaret, and Madeline for helping me make this project and giving me
+    ideas to make my game more enjoyable for the player and for helping me with my
+    big issues in the game.Another big two people I would like to thank are the owner
+    Jack and Centre Director Sue Wu because they are just the best people at any
+    code ninjas.  Finally, I want to thank my parents for supporting me throughout
+    my still ongoing coding journey and giving me the things I need to continue coding.
 --- !u!222 &1108498618
 CanvasRenderer:
   m_ObjectHideFlags: 0
