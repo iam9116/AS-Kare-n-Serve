@@ -8,6 +8,8 @@ TagManager:
   - Karen
   - Floor
   - SpawnPoint
+  - Trash
+  - CoffeeAnchor
   layers:
   - Default
   - TransparentFX

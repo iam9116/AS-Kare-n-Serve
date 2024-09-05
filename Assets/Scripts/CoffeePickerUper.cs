@@ -9,6 +9,7 @@ public class CoffeePickerUper : MonoBehaviour
 
     public GameObject currentlyHeldCoffee;
     public bool isHoldingCoffee = false;
+    public bool pickedupCoffee = false;
     public CoffeeType coffeeType;
 
     private KarenClass karenRef;
@@ -25,14 +26,21 @@ public class CoffeePickerUper : MonoBehaviour
     {
         if (Input.GetButtonDown("Jump"))
         {
-            if (interactingObj == "Coffee" && !isHoldingCoffee)
+            if (interactingObj == "Coffee" && !isHoldingCoffee && !pickedupCoffee)
             {
                 Coffee = Instantiate(currentlyHeldCoffee, transform.position, Quaternion.identity);
                 Coffee.transform.parent = transform;
                 isHoldingCoffee = true;
+                pickedupCoffee = true;
             }
         }
+    }
 
+    public void DestroyCoffee()
+    {
+        Destroy(Coffee);
+        isHoldingCoffee = false;
+        pickedupCoffee = false;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -49,7 +57,6 @@ public class CoffeePickerUper : MonoBehaviour
                 karenRef = collision.gameObject.GetComponent<KarenClass>();
                 break;
         }
-        
     }
 
     private void OnTriggerStay2D(Collider2D other)

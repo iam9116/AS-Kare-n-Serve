@@ -58,7 +58,7 @@ public class KarenClass : MonoBehaviour
         spawnPoint = spawnCheck;
         spawnPoint.isOccupied = true;
     }
-    private void OnTriggerEnter2D(Collider2D collision)
+    public void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Coffee")
         {
@@ -66,16 +66,17 @@ public class KarenClass : MonoBehaviour
             var coffee = collision.GetComponent<CoffeeClass>();
             Debug.Log(coffee.type);
             var marg = GameObject.Find("CoffeeAnchor").GetComponent<CoffeePickerUper>();
-
-            if (coffee.type == iWantThis)
+            if (coffee.type == iWantThis && marg.isHoldingCoffee)
             {
                 ChangeText(KarenSpeech[2]);
                 Destroy(marg.Coffee);
+                boxCollider.enabled = false;
                 marg.isHoldingCoffee = false;
+                marg.pickedupCoffee = false;
                 ScoreManager.score++;
                 hasCoffee = true;
                 Invoke("KarenBurner", 2f);
-                boxCollider.enabled = false;
+                
             }
             else
             {
@@ -111,5 +112,10 @@ public class KarenClass : MonoBehaviour
         {
             SceneManager.LoadScene(5);
         }
+    }
+
+    void DestroyCoffee()
+    {
+       
     }
 }
