@@ -26,12 +26,12 @@ public class CoffeePickerUper : MonoBehaviour
     {
         if (Input.GetButtonDown("Jump"))
         {
-            if (interactingObj == "Coffee" && !isHoldingCoffee && !pickedupCoffee)
+            if (interactingObj == "Coffee" && !isHoldingCoffee)
             {
                 Coffee = Instantiate(currentlyHeldCoffee, transform.position, Quaternion.identity);
                 Coffee.transform.parent = transform;
                 isHoldingCoffee = true;
-                pickedupCoffee = true;
+                //pickedupCoffee = true;
             }
         }
     }
@@ -40,7 +40,7 @@ public class CoffeePickerUper : MonoBehaviour
     {
         Destroy(Coffee);
         isHoldingCoffee = false;
-        pickedupCoffee = false;
+        //pickedupCoffee = false;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

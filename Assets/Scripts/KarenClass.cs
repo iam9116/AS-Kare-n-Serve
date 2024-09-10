@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-using UnityEditor.SceneManagement;
+//using UnityEditor.SceneManagement;
 using UnityEngine.SceneManagement;
 
 public class KarenClass : MonoBehaviour
@@ -72,7 +72,7 @@ public class KarenClass : MonoBehaviour
                 Destroy(marg.Coffee);
                 boxCollider.enabled = false;
                 marg.isHoldingCoffee = false;
-                marg.pickedupCoffee = false;
+                //marg.pickedupCoffee = false;
                 ScoreManager.score++;
                 hasCoffee = true;
                 Invoke("KarenBurner", 2f);
