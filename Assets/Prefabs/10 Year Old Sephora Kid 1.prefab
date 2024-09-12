@@ -112,6 +112,9 @@ MonoBehaviour:
     to slay more next time.
   iWantThis: 3
   karen: {fileID: 5009593426370159968}
+  sRenderer: {fileID: 5009593426440016371}
+  originalColour: {r: 1, g: 1, b: 1, a: 0}
+  shiftedColour: {r: 0.9686275, g: 0.7137255, b: 0.8235295, a: 0}
   waitTime: 30
   sanityToLose: 10
   hasCoffee: 0

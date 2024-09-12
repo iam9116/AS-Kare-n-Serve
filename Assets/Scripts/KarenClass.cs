@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 //using UnityEditor.SceneManagement;
 using UnityEngine.SceneManagement;
@@ -11,12 +12,17 @@ public class KarenClass : MonoBehaviour
     public CoffeeType iWantThis;
     public GameObject karen;
 
+    public SpriteRenderer sRenderer;
+    public Color originalColour;
+    public Color shiftedColour;
+
     //Tweakables
     public float waitTime = 25f;
     public int sanityToLose = 10;
 
-    private TMPro.TextMeshPro text;
+    private TextMeshPro text;
     private SpawnPoint_Tool spawnPoint;
+
 
     public bool hasCoffee;
 
@@ -24,6 +30,7 @@ public class KarenClass : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
         text = GetComponentInChildren<TextMeshPro>();
         
         if (KarenSpeech != null)
@@ -34,6 +41,8 @@ public class KarenClass : MonoBehaviour
         Invoke("KarenWarning", 12f);
 
         boxCollider = GetComponent<BoxCollider2D>();
+
+        InvokeRepeating("ColourShift", 1f, 1f);
     }
 
     void OnDestroy()
@@ -46,6 +55,19 @@ public class KarenClass : MonoBehaviour
     {
         
     }
+
+    private void ColourShift()
+    {
+        Color newColor = Vector4.Lerp(originalColour, shiftedColour, 0.5f);
+
+        if (sRenderer != null)
+        {
+            newColor.a = 1;
+            sRenderer.color = newColor;
+        }
+    }
+
+
 
     public void ChangeText(string newText)
     {
