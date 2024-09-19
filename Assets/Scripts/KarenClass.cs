@@ -22,7 +22,7 @@ public class KarenClass : MonoBehaviour
 
     private TextMeshPro text;
     private SpawnPoint_Tool spawnPoint;
-
+    private float incrementBuffer = 0f;
 
     public bool hasCoffee;
 
@@ -42,7 +42,7 @@ public class KarenClass : MonoBehaviour
 
         boxCollider = GetComponent<BoxCollider2D>();
 
-        InvokeRepeating("ColourShift", 1f, 1f);
+        InvokeRepeating("ColourShift", 1f, 1.5f);
     }
 
     void OnDestroy()
@@ -58,7 +58,8 @@ public class KarenClass : MonoBehaviour
 
     private void ColourShift()
     {
-        Color newColor = Vector4.Lerp(originalColour, shiftedColour, 0.5f);
+        Color newColor = Vector4.Lerp(originalColour, shiftedColour, incrementBuffer);
+        incrementBuffer += 1f/24f;
 
         if (sRenderer != null)
         {
@@ -93,8 +94,7 @@ public class KarenClass : MonoBehaviour
                 ChangeText(KarenSpeech[2]);
                 Destroy(marg.Coffee);
                 boxCollider.enabled = false;
-                marg.isHoldingCoffee = false;
-                //marg.pickedupCoffee = false;
+                marg.isHoldingCoffee = false;                
                 ScoreManager.score++;
                 hasCoffee = true;
                 Invoke("KarenBurner", 2f);
