@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class CoffeePickerUper : MonoBehaviour
 {
@@ -14,7 +15,9 @@ public class CoffeePickerUper : MonoBehaviour
 
     private KarenClass karenRef;
     private string interactingObj;
+    public List<string> KarenSpeech;
 
+    private TextMeshPro text;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,16 +29,36 @@ public class CoffeePickerUper : MonoBehaviour
     {
         if (Input.GetButtonDown("Jump"))
         {
-            if (interactingObj == "Coffee" && !isHoldingCoffee)
+            if (isHoldingCoffee)
             {
-                Coffee = Instantiate(currentlyHeldCoffee, transform.position, Quaternion.identity);
-                Coffee.transform.parent = transform;
-                isHoldingCoffee = true;
-                //pickedupCoffee = true;
+                if (interactingObj == "Karen")
+                {
+                    DestroyCoffee();
+                    karenRef.ObtainCoffee(coffeeType);
+                    
+                }
+                if (interactingObj == "Trash")
+                {
+                    DestroyCoffee();
+                }
+            }
+            else
+            {
+                if (interactingObj == "Coffee")
+                {
+                    Coffee = Instantiate(currentlyHeldCoffee, transform.position, Quaternion.identity);
+                    Coffee.transform.parent = transform;
+                    isHoldingCoffee = true;
+                }
             }
         }
     }
 
+    public void ChangeText(string newText)
+    {
+        if (text == null) return;
+        text.text = newText;
+    }
     public void DestroyCoffee()
     {
         Destroy(Coffee);

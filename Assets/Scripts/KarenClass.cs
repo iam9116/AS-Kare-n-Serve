@@ -81,35 +81,55 @@ public class KarenClass : MonoBehaviour
         spawnPoint = spawnCheck;
         spawnPoint.isOccupied = true;
     }
+
+    public void ObtainCoffee(CoffeeType will)
+    {
+        Debug.Log(will + " :: I want : " + iWantThis);
+        
+        
+        if (will == iWantThis)
+        {
+            ChangeText(KarenSpeech[2]);
+            boxCollider.enabled = false;
+            ScoreManager.score++;
+            hasCoffee = true;
+            Invoke("KarenBurner", 2f);
+        }
+        else
+        {
+            ChangeText(KarenSpeech[3]);
+            hasCoffee = false;
+            ScoreManager.sanity -= 20;
+        }
+        SceneLoader();
+    }
+
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Coffee")
-        {
-            Debug.Log("There's coffee");
-            var coffee = collision.GetComponent<CoffeeClass>();
-            Debug.Log(coffee.type);
-            var marg = GameObject.Find("CoffeeAnchor").GetComponent<CoffeePickerUper>();
-            if (coffee.type == iWantThis && marg.isHoldingCoffee)
-            {
-                ChangeText(KarenSpeech[2]);
-                Destroy(marg.Coffee);
-                boxCollider.enabled = false;
-                marg.isHoldingCoffee = false;                
-                ScoreManager.score++;
-                hasCoffee = true;
-                Invoke("KarenBurner", 2f);
+        //if (collision.tag == "Coffee")
+        //{
+        //    Debug.Log("There's coffee");
+        //    var coffee = collision.GetComponent<CoffeeClass>();
+        //    Debug.Log(coffee.type);
+        //    var marg = GameObject.Find("CoffeeAnchor").GetComponent<CoffeePickerUper>();
+            
+        //    if (coffee.type == iWantThis && marg.isHoldingCoffee)
+        //    {
+        //        ChangeText(KarenSpeech[2]);
+        //        boxCollider.enabled = false;
+        //        ScoreManager.score++;
+        //        hasCoffee = true;
+        //        Invoke("KarenBurner", 2f);
                 
-            }
-            else
-            {
-                ChangeText(KarenSpeech[3]);
-                Destroy(marg.Coffee);
-                marg.isHoldingCoffee = false;
-                hasCoffee = false;
-                ScoreManager.sanity -= 20;
-            }
-            SceneLoader();
-        }
+        //    }
+        //    else
+        //    {
+        //        ChangeText(KarenSpeech[3]);
+        //        hasCoffee = false;
+        //        ScoreManager.sanity -= 20;
+        //    }
+        //    SceneLoader();
+        //}
     }
 
     private void KarenWarning()

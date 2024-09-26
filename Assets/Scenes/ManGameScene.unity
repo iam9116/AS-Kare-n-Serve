@@ -1677,6 +1677,7 @@ MonoBehaviour:
   isHoldingCoffee: 0
   pickedupCoffee: 0
   coffeeType: 0
+  KarenSpeech: []
 --- !u!61 &1404745873
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1996,12 +1997,12 @@ PrefabInstance:
     - target: {fileID: 2408770935485794199, guid: d630b246cfd71144db4d7ca2f038385f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -158.43906
+      value: -161.5
       objectReference: {fileID: 0}
     - target: {fileID: 2408770935485794199, guid: d630b246cfd71144db4d7ca2f038385f,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -79.265594
+      value: -62.9
       objectReference: {fileID: 0}
     - target: {fileID: 2408770935485794199, guid: d630b246cfd71144db4d7ca2f038385f,
         type: 3}
@@ -2795,6 +2796,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Kawfee (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1498232489113028703, guid: acea6026b1e80bc4f876836a501610e6,
+        type: 3}
+      propertyPath: type
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: acea6026b1e80bc4f876836a501610e6, type: 3}
 --- !u!1001 &2015274022137758244
@@ -2884,6 +2890,11 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2015274022328396859, guid: f747ac0fefe5d8f428619cee5fd13a52,
+        type: 3}
+      propertyPath: type
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2015274022328396863, guid: f747ac0fefe5d8f428619cee5fd13a52,
         type: 3}
       propertyPath: m_Name
@@ -2972,6 +2983,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 272033633}
     m_Modifications:
+    - target: {fileID: 7514195918080488291, guid: 7958f8558e858e143bf77037133a1ede,
+        type: 3}
+      propertyPath: type
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7514195918080488292, guid: 7958f8558e858e143bf77037133a1ede,
         type: 3}
       propertyPath: m_RootOrder
