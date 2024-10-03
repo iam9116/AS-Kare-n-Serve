@@ -75,6 +75,7 @@ public class CoffeePickerUper : MonoBehaviour
             case "Coffee":
                 //Get a reference to the overlapped coffee object
                 currentlyHeldCoffee = collision.gameObject;
+                coffeeType = collision.gameObject.GetComponent<CoffeeClass>().type;
                 break;
             case "Karen":
                 karenRef = collision.gameObject.GetComponent<KarenClass>();
