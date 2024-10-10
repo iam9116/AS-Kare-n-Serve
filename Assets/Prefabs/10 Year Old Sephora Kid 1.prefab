@@ -103,8 +103,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   KarenSpeech:
   - I'm Miss. Slay McPeriod Queen Give Me Order #3 Please.
-  - I am literally running out of time like hurry up and start slaying or else my
-    order was the one next ot the pink one.
+  - Bestie I'm literally running out of time so start slaying or else. My order was
+    the one next to the green one btw
   - Slay bestie period.
   - Umm bestie this is literally wrong so like, try again...
   - Bestie I am out of time so give my money back cause I literally ran out of time
@@ -392,7 +392,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -1.6464071, y: 0, z: 0, w: -27.158829}
+  m_margin: {x: -12.973495, y: 0, z: -11.327087, w: -29.842117}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

@@ -1721,6 +1721,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 216147692613564859, guid: 93399fbacd954b841bb53fb8d72713aa,
+        type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 937626875611406747, guid: 93399fbacd954b841bb53fb8d72713aa,
         type: 3}
       propertyPath: GamePausePanel
@@ -1728,13 +1733,23 @@ PrefabInstance:
       objectReference: {fileID: 266666153}
     - target: {fileID: 1033966650044069251, guid: 93399fbacd954b841bb53fb8d72713aa,
         type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.24746549
+      objectReference: {fileID: 0}
+    - target: {fileID: 1033966650044069251, guid: 93399fbacd954b841bb53fb8d72713aa,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.426107
+      objectReference: {fileID: 0}
+    - target: {fileID: 1033966650044069251, guid: 93399fbacd954b841bb53fb8d72713aa,
+        type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -880
+      value: -366
       objectReference: {fileID: 0}
     - target: {fileID: 1033966650044069251, guid: 93399fbacd954b841bb53fb8d72713aa,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 452
+      value: 197
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 93399fbacd954b841bb53fb8d72713aa, type: 3}

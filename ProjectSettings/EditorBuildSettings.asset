@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BaristaChoose.unity
     guid: c9743043e41eaab46994e3996ed17a58
+  - enabled: 1
+    path: Assets/Scenes/GameScene.unity
+    guid: 21c97b56bd08f4a4b9961a86a691b0f5
   m_configObjects: {}

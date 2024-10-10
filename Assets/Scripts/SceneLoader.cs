@@ -46,4 +46,9 @@ public class SceneLoader : MonoBehaviour
     {
         SceneManager.LoadScene(7);
     }
+
+    public void LoadOtherOtherOtherOtherOtherOtherScene()
+    {
+        SceneManager.LoadScene(8);
+    }
 }

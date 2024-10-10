@@ -529,17 +529,24 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Thank you Code Ninjas Etobicoke North for giving me everything I need to
-    make this game a reality and thank you to the founder(s) of Code Ninjas for making
-    this place simply exist. I also want to thank my best best best best best best
-    best best best best best best best best best best friend for giving me fun ideas
-    for my game and for existing. I would also like the spefically thank my sensei
-    William, Margaret, and Madeline for helping me make this project and giving me
-    ideas to make my game more enjoyable for the player and for helping me with my
-    big issues in the game.Another big two people I would like to thank are the owner
-    Jack and Centre Director Sue Wu because they are just the best people at any
-    code ninjas.  Finally, I want to thank my parents for supporting me throughout
-    my still ongoing coding journey and giving me the things I need to continue coding.
+  m_Text: 'Game by: Ashton Shyti
+
+    Music from: Pixabay
+
+    Assets by: Ashton
+    Shyti
+
+
+    Helpful Websites: Pixilart.com
+
+
+    Special thanks to everyone at
+    Code Ninjas for all of the feedback I''ve recieved, my parents for supporting
+    my ongoing coding journey, and my Pookie Wookie Schmookie Lookie Made a Big Fat
+    Sharty Spooky Dookie Bear for giving me amazing idead for my game.
+
+
+'
 --- !u!222 &1108498618
 CanvasRenderer:
   m_ObjectHideFlags: 0
