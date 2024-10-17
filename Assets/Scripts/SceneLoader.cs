@@ -3,12 +3,26 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+
+public enum EScene : int
+{
+    MainMenu = 0,
+    TimedMode,
+    Controls,
+    Credits,
+    GameOver,
+    GameWin,
+    FemaleGameScene,
+    BaristaChoose,
+    GameScene
+}
+
 public class SceneLoader : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
     {
-        
+        //SceneManager.sceneLoaded.Add(OnSceneLoaded);
     }
 
     // Update is called once per frame
@@ -17,9 +31,24 @@ public class SceneLoader : MonoBehaviour
         
     }
 
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+
+    }
+
     public void LoadScene()
     {
+       
         SceneManager.LoadScene(1);
+    }
+
+    public void LoadScene(int gender)
+    {
+        SceneManager.LoadScene(7);
+        GameObject obj = GameObject.Find("PlayerSpawner");
+        PlayerSpawner playerSpawner = obj.GetComponent<PlayerSpawner>();
+
+        playerSpawner.SpawnPlayer(gender);
     }
 
     public void LoadOtherScene()
@@ -50,5 +79,10 @@ public class SceneLoader : MonoBehaviour
     public void LoadOtherOtherOtherOtherOtherOtherScene()
     {
         SceneManager.LoadScene(8);
+    }
+
+    public void BaristaEnabler()
+    {
+
     }
 }
