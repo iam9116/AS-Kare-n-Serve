@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-
+[System.Serializable]
 public enum EScene : int
 {
     MainMenu = 0,
@@ -19,10 +19,19 @@ public enum EScene : int
 
 public class SceneLoader : MonoBehaviour
 {
+    private int selectedGender;
+    private bool gameInitialized = false;
+
+
+    private void Awake()
+    {
+    }
+
     // Start is called before the first frame update
     void Start()
     {
-        //SceneManager.sceneLoaded.Add(OnSceneLoaded);
+        SceneManager.sceneLoaded += OnSceneLoaded;
+        selectedGender = 0;
     }
 
     // Update is called once per frame
@@ -33,56 +42,24 @@ public class SceneLoader : MonoBehaviour
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
+        if (gameInitialized == false && scene.name == "GameScene" && scene.isLoaded == true)
+        {
+            GameObject obj = GameObject.Find("PlayerSpawner");
+            PlayerSpawner playerSpawner = obj.GetComponent<PlayerSpawner>();
+            playerSpawner.SpawnPlayer(selectedGender);
 
-    }
-
-    public void LoadScene()
-    {
-       
-        SceneManager.LoadScene(1);
+            gameInitialized = true;
+        }
     }
 
     public void LoadScene(int gender)
     {
-        SceneManager.LoadScene(7);
-        GameObject obj = GameObject.Find("PlayerSpawner");
-        PlayerSpawner playerSpawner = obj.GetComponent<PlayerSpawner>();
-
-        playerSpawner.SpawnPlayer(gender);
-    }
-
-    public void LoadOtherScene()
-    {
-        SceneManager.LoadScene(0);
-    }
-
-    public void LoadOtherOtherScene()
-    {
-        SceneManager.LoadScene(2);
-    }
-
-    public void LoadOtherOtherOtherScene()
-    {
-        SceneManager.LoadScene(3);
-    }
-
-    public void LoadOtherOtherOtherOtherScene()
-    {
-        SceneManager.LoadScene(6);
-    }
-
-    public void LoadOtherOtherOtherOtherOtherScene()
-    {
+        selectedGender = gender;
         SceneManager.LoadScene(7);
     }
 
-    public void LoadOtherOtherOtherOtherOtherOtherScene()
+    public void LoadSceneByNumber(int sceneNumber)
     {
-        SceneManager.LoadScene(8);
-    }
-
-    public void BaristaEnabler()
-    {
-
+        SceneManager.LoadScene(sceneNumber);
     }
 }
