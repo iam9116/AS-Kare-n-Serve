@@ -9,7 +9,7 @@ using UnityEngine.SceneManagement;
 public class KarenClass : MonoBehaviour
 {
     public List<string> KarenSpeech;
-    public CoffeeType iWantThis;
+    public string iWantThis;
     public GameObject karen;
 
     public SpriteRenderer sRenderer;
@@ -50,12 +50,6 @@ public class KarenClass : MonoBehaviour
         spawnPoint.isOccupied = false;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     private void ColourShift()
     {
         Color newColor = Vector4.Lerp(originalColour, shiftedColour, incrementBuffer);
@@ -67,8 +61,6 @@ public class KarenClass : MonoBehaviour
             sRenderer.color = newColor;
         }
     }
-
-
 
     public void ChangeText(string newText)
     {
@@ -82,12 +74,9 @@ public class KarenClass : MonoBehaviour
         spawnPoint.isOccupied = true;
     }
 
-    public void ObtainCoffee(CoffeeType will)
+    public void ObtainCoffee(string coffeeType)
     {
-        Debug.Log(will + " :: I want : " + iWantThis);
-        
-        
-        if (will == iWantThis)
+        if (coffeeType == iWantThis)
         {
             ChangeText(KarenSpeech[2]);
             boxCollider.enabled = false;
@@ -102,34 +91,6 @@ public class KarenClass : MonoBehaviour
             ScoreManager.sanity -= 20;
         }
         SceneLoader();
-    }
-
-    public void OnTriggerEnter2D(Collider2D collision)
-    {
-        //if (collision.tag == "Coffee")
-        //{
-        //    Debug.Log("There's coffee");
-        //    var coffee = collision.GetComponent<CoffeeClass>();
-        //    Debug.Log(coffee.type);
-        //    var marg = GameObject.Find("CoffeeAnchor").GetComponent<CoffeePickerUper>();
-            
-        //    if (coffee.type == iWantThis && marg.isHoldingCoffee)
-        //    {
-        //        ChangeText(KarenSpeech[2]);
-        //        boxCollider.enabled = false;
-        //        ScoreManager.score++;
-        //        hasCoffee = true;
-        //        Invoke("KarenBurner", 2f);
-                
-        //    }
-        //    else
-        //    {
-        //        ChangeText(KarenSpeech[3]);
-        //        hasCoffee = false;
-        //        ScoreManager.sanity -= 20;
-        //    }
-        //    SceneLoader();
-        //}
     }
 
     private void KarenWarning()
@@ -154,10 +115,5 @@ public class KarenClass : MonoBehaviour
         {
             SceneManager.LoadScene(5);
         }
-    }
-
-    void DestroyCoffee()
-    {
-       
     }
 }

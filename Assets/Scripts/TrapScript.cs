@@ -10,13 +10,6 @@ public class TrapScript : MonoBehaviour
     {
         Invoke("BananaBurner", Random.Range(2, 8));
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Player")

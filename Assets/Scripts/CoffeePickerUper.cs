@@ -11,18 +11,13 @@ public class CoffeePickerUper : MonoBehaviour
     public GameObject currentlyHeldCoffee;
     public bool isHoldingCoffee = false;
     public bool pickedupCoffee = false;
-    public CoffeeType coffeeType;
+    public string coffeeType;
 
     private KarenClass karenRef;
     private string interactingObj;
     public List<string> KarenSpeech;
 
     private TextMeshPro text;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
@@ -35,7 +30,6 @@ public class CoffeePickerUper : MonoBehaviour
                 {
                     DestroyCoffee();
                     karenRef.ObtainCoffee(coffeeType);
-                    
                 }
                 if (interactingObj == "Trash")
                 {
@@ -44,7 +38,7 @@ public class CoffeePickerUper : MonoBehaviour
             }
             else
             {
-                if (interactingObj == "Coffee")
+                if (interactingObj == "Black" || interactingObj == "Latte" || interactingObj == "IceCaramel" || interactingObj == "Espresso")
                 {
                     Coffee = Instantiate(currentlyHeldCoffee, transform.position, Quaternion.identity);
                     Coffee.transform.parent = transform;
@@ -63,7 +57,6 @@ public class CoffeePickerUper : MonoBehaviour
     {
         Destroy(Coffee);
         isHoldingCoffee = false;
-        //pickedupCoffee = false;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -72,19 +65,17 @@ public class CoffeePickerUper : MonoBehaviour
 
         switch (interactingObj)
         {
-            case "Coffee":
+            case "Black":
+            case "Latte":
+            case "Espresso":
+            case "IceCaramel":
                 //Get a reference to the overlapped coffee object
                 currentlyHeldCoffee = collision.gameObject;
-                coffeeType = collision.gameObject.GetComponent<CoffeeClass>().type;
+                coffeeType = collision.gameObject.tag;
                 break;
             case "Karen":
                 karenRef = collision.gameObject.GetComponent<KarenClass>();
                 break;
         }
-    }
-
-    private void OnTriggerStay2D(Collider2D other)
-    {
-
     }
 }

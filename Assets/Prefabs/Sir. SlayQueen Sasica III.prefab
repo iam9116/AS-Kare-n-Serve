@@ -191,7 +191,7 @@ MonoBehaviour:
   - I am giving your one more chance and if you don't get it right your whole company
     is dead.
   - You just lost a valuable customer
-  iWantThis: 0
+  iWantThis: Black
   karen: {fileID: 5009593426370159968}
   sRenderer: {fileID: 5009593426440016371}
   originalColour: {r: 1, g: 1, b: 1, a: 0}

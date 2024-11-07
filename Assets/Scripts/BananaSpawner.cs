@@ -19,13 +19,6 @@ public class BananaSpawner : MonoBehaviour
     {
         InvokeRepeating("SpawnBanana", initialSpawn, spawnRate);
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     void SpawnBanana()
     {
         float xPos = Random.Range(minX, maxX);

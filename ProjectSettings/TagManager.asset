@@ -10,6 +10,10 @@ TagManager:
   - SpawnPoint
   - Trash
   - CoffeeAnchor
+  - Espresso
+  - Black
+  - IceCaramel
+  - Latte
   layers:
   - Default
   - TransparentFX

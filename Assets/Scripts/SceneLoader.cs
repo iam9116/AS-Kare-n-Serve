@@ -23,21 +23,11 @@ public class SceneLoader : MonoBehaviour
     private bool gameInitialized = false;
 
 
-    private void Awake()
-    {
-    }
-
     // Start is called before the first frame update
     void Start()
     {
         SceneManager.sceneLoaded += OnSceneLoaded;
         selectedGender = 0;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)

@@ -19,16 +19,6 @@ public class Sound : MonoBehaviour
         InvokeRepeating("IncreaseVolume", 0.5f, (int)(maxVol - initialVol) / vol);
     }
 
-    private void FixedUpdate()
-    {
-       
-    }
-
-    public void PlaySoundWhenClicked()
-    {
-        
-    }
-
     private void IncreaseVolume()
     {
         if (Soundd.volume >= maxVol) return;
