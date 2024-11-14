@@ -76,6 +76,8 @@ public class KarenClass : MonoBehaviour
 
     public void ObtainCoffee(string coffeeType)
     {
+        Debug.Log("Input: " + coffeeType + " :: " + "Karen want this: " + iWantThis);
+
         if (coffeeType == iWantThis)
         {
             ChangeText(KarenSpeech[2]);
