@@ -76,7 +76,7 @@ public class KarenClass : MonoBehaviour
 
     public void ObtainCoffee(string coffeeType)
     {
-        Debug.Log("Input: " + coffeeType + " :: " + "Karen want this: " + iWantThis);
+        //Debug.Log("Input: " + coffeeType + " :: " + "Karen want this: " + iWantThis);
 
         if (coffeeType == iWantThis)
         {

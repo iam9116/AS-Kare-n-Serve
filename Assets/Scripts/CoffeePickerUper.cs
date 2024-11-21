@@ -42,6 +42,7 @@ public class CoffeePickerUper : MonoBehaviour
                 {
                     Coffee = Instantiate(currentlyHeldCoffee, transform.position, Quaternion.identity);
                     Coffee.transform.parent = transform;
+                    coffeeType = Coffee.gameObject.tag;
                     isHoldingCoffee = true;
                 }
             }
@@ -61,6 +62,8 @@ public class CoffeePickerUper : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        Debug.Log(collision.gameObject.tag);
+        
         interactingObj = collision.gameObject.tag;
 
         switch (interactingObj)
@@ -71,7 +74,6 @@ public class CoffeePickerUper : MonoBehaviour
             case "IceCaramel":
                 //Get a reference to the overlapped coffee object
                 currentlyHeldCoffee = collision.gameObject;
-                coffeeType = collision.gameObject.tag;
                 break;
             case "Karen":
                 karenRef = collision.gameObject.GetComponent<KarenClass>();

@@ -1565,6 +1565,11 @@ PrefabInstance:
       propertyPath: m_UiScaleMode
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 216147692908236914, guid: 93399fbacd954b841bb53fb8d72713aa,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 937626875611406747, guid: 93399fbacd954b841bb53fb8d72713aa,
         type: 3}
       propertyPath: GamePausePanel
@@ -2743,6 +2748,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Kawfee (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1498232489113028691, guid: acea6026b1e80bc4f876836a501610e6,
+        type: 3}
+      propertyPath: m_TagString
+      value: Black
+      objectReference: {fileID: 0}
     - target: {fileID: 1498232489113028703, guid: acea6026b1e80bc4f876836a501610e6,
         type: 3}
       propertyPath: type
@@ -3009,6 +3019,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Kawfee (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7514195918080488295, guid: 7958f8558e858e143bf77037133a1ede,
+        type: 3}
+      propertyPath: m_TagString
+      value: IceCaramel
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7958f8558e858e143bf77037133a1ede, type: 3}
