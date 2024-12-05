@@ -73,6 +73,10 @@ public class CoffeePickerUper : MonoBehaviour
             case "Espresso":
             case "IceCaramel":
                 //Get a reference to the overlapped coffee object
+                if (isHoldingCoffee == true)
+                {
+                    break;
+                }
                 currentlyHeldCoffee = collision.gameObject;
                 break;
             case "Karen":

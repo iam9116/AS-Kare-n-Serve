@@ -2938,6 +2938,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Kawfee (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1498232489113028691, guid: acea6026b1e80bc4f876836a501610e6,
+        type: 3}
+      propertyPath: m_TagString
+      value: Black
+      objectReference: {fileID: 0}
     - target: {fileID: 1498232489113028703, guid: acea6026b1e80bc4f876836a501610e6,
         type: 3}
       propertyPath: type
@@ -3205,6 +3210,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Kawfee (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7514195918080488295, guid: 7958f8558e858e143bf77037133a1ede,
+        type: 3}
+      propertyPath: m_TagString
+      value: IceCaramel
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7958f8558e858e143bf77037133a1ede, type: 3}
 --- !u!1001 &8258849893730587410
@@ -3214,6 +3224,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4703394241806162316, guid: 8ed91e07931ca1e4b809e4f2bfd46c56,
+        type: 3}
+      propertyPath: pickedupCoffee
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4703394241806162316, guid: 8ed91e07931ca1e4b809e4f2bfd46c56,
+        type: 3}
+      propertyPath: isHoldingCoffee
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8258849893496877748, guid: 8ed91e07931ca1e4b809e4f2bfd46c56,
         type: 3}
       propertyPath: m_RootOrder
