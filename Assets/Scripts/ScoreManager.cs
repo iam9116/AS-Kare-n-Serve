@@ -6,8 +6,11 @@ public class ScoreManager : MonoBehaviour
 {
     public static int score = 0;
     public static int sanity = 100;
-    
 
+    private void Start()
+    {
+        score = 0;
+    }
     private void OnGUI()
     {
         Rect rectangle = new Rect(175, 10, 200, 400);
