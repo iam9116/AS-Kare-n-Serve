@@ -10,6 +10,7 @@ public class ScoreManager : MonoBehaviour
     private void Start()
     {
         score = 0;
+        sanity = 100;
     }
     private void OnGUI()
     {

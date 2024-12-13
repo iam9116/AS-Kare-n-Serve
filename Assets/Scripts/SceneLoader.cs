@@ -32,7 +32,7 @@ public class SceneLoader : MonoBehaviour
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        if (gameInitialized == false && scene.name == "GameScene" && scene.isLoaded == true)
+        if (gameInitialized == false && scene.name == "GameScene")
         {
             GameObject obj = GameObject.Find("PlayerSpawner");
             PlayerSpawner playerSpawner = obj.GetComponent<PlayerSpawner>();

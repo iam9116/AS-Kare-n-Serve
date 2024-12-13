@@ -14,7 +14,6 @@ public class JiafeiScream : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision2D)
     {
-        Debug.Log(collision2D.gameObject.name);
         if (collision2D.gameObject.CompareTag(Player))
         {
             audioSource.Play();

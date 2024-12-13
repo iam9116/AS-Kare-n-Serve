@@ -62,8 +62,6 @@ public class CoffeePickerUper : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log(collision.gameObject.tag);
-        
         interactingObj = collision.gameObject.tag;
 
         switch (interactingObj)

@@ -19,14 +19,16 @@ public class PlayerSpawner : MonoBehaviour
     {
         if (playerHasSpawned == true) return;
 
-        if (gender == 0)
+        if (gender == 5)
         {
             Instantiate(maleBarrista);
-        }else
+            playerHasSpawned = true;
+        }
+        if (gender == 7)
         {
             Instantiate (femaleBarrista);
+            playerHasSpawned = true;
         }
-        playerHasSpawned = true;
     }
         
 }
